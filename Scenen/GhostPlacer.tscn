@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cw8palb6e3vgw"]
 
 [ext_resource type="Script" uid="uid://cjoydj7gmsga5" path="res://Scrips/ghost_placer.gd" id="1_adgj2"]
-[ext_resource type="Texture2D" uid="uid://djdrgu66fe3to" path="res://Assets/Player/Player_Tomato.png" id="2_lq3g3"]
+[ext_resource type="Texture2D" uid="uid://damjdyomjabos" path="res://Assets/gebeude/placeholder.png" id="2_adgj2"]
 
 [node name="GhostPlacer" type="Node2D" unique_id=1564869970]
+script = ExtResource("1_adgj2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=528145876]
-texture = ExtResource("2_lq3g3")
-script = ExtResource("1_adgj2")
+texture = ExtResource("2_adgj2")

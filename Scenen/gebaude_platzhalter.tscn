@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://davw7pc0yihlb"]
+
+[ext_resource type="Texture2D" uid="uid://damjdyomjabos" path="res://Assets/gebeude/placeholder.png" id="1_voimv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_voimv"]
+size = Vector2(32, 32)
+
+[node name="Gebaude" type="Node2D" unique_id=307857244]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1453200274]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1905928482]
+shape = SubResource("RectangleShape2D_voimv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=20092715]
+texture = ExtResource("1_voimv")
