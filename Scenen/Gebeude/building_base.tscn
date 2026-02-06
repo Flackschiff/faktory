@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cmw72u6n6h1ve"]
+
+[ext_resource type="Script" uid="uid://d2uph7x7jw4p8" path="res://Scrips/Gebeude Scrips/building_base.gd" id="1_unauh"]
+
+[node name="Building_Base" type="Node2D" unique_id=2063750384]
+script = ExtResource("1_unauh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=544330774]

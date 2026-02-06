@@ -1,8 +1,6 @@
 extends Node2D
 
-"res://Scenen/gebaude_platzhalter.tscn"
-
-var building_scene := load("res://Scenen/gebaude_platzhalter.tscn")
+var building_scene := load("res://Scenen/Gebeude/building_miner.tscn")
 
 func _process(_delta):
 	var mouse_pos = get_global_mouse_position()
@@ -11,7 +9,9 @@ func _process(_delta):
 	if Input.is_action_just_pressed("LinkeMaustaste"):
 		get_parent().place_object(building_scene, global_position)
 
-
+	#bekommt die Aktuelle Maus Position und Rechnet sie um auf die Tile 
 	var tile_pos = get_parent().resource_map.local_to_map(mouse_pos)
-	var id = get_parent().resource_map.get_cell_atlas_coords(tile_pos)
-	print("Tile ID: ", id) 
+	#Bekommt das Objekt Tile Data 
+	var tile_data = get_parent().resource_map.get_cell_tile_data(tile_pos)
+	#muss vorher checken ob es Daten an der Stelle gibt sonst schmiert das ab ->    has_custom_data(layer_name: String)
+	print("Tile Ressurce: ", tile_data.get_custom_data("RessurceType")) 

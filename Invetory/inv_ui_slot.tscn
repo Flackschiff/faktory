@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://butywuyey8d7m"]
+
+[ext_resource type="Texture2D" uid="uid://csd7pvledcen" path="res://Invetory/Assets/InvBackground.png" id="1_0i8tf"]
+[ext_resource type="Script" uid="uid://ba3f0xqdcunvo" path="res://Invetory/inv_ui_slot.gd" id="1_d5mqc"]
+
+[node name="Inv Ui Slot" type="Panel" unique_id=1070902862]
+custom_minimum_size = Vector2(16, 16)
+offset_right = 16.0
+offset_bottom = 16.0
+script = ExtResource("1_d5mqc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1902893882]
+scale = Vector2(0.31999996, 0.31999996)
+texture = ExtResource("1_0i8tf")
+centered = false
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1126403492]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="Panel" type="Panel" parent="CenterContainer" unique_id=7370248]
+layout_mode = 2
+
+[node name="Item Display" type="Sprite2D" parent="CenterContainer/Panel" unique_id=907332189]
