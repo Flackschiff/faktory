@@ -1,7 +1,7 @@
 extends Control
 
-@onready var inv: Inv = preload("res://Invetory/Player_Inventory.tres")
-@onready var slots: Array = $NinePatchRect/GridContainer.get_children()
+@onready var inv: Inv = preload("res://Invetory/Instances/Player_Inventory.tres")
+@onready var slots: Array = $Inventory/GridContainer.get_children()
 
 var isOpen = false
 
@@ -10,8 +10,15 @@ func _ready():
 	close()
 	
 func update_slots():
-	for i in range(min(inv.items.size(), slots.size())):
-		slots[i].update(inv.items[i])
+	#index für die seperaten Inventory Slots im Invetar
+	var index = 0
+	#Iterriert über alle objekte im Aktuellen Invetory
+	for obj in inv.slots:
+		#macht die aktuellen Invetar sachen dass sie angezeigt werden 
+		slots[index].update(obj)
+		index += 1
+
+
 
 
 

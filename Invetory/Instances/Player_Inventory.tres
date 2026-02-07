@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Inv" format=3 uid="uid://c0yys4amb3b5o"]
+
+[ext_resource type="Script" uid="uid://bopx1tbhgcptj" path="res://Invetory/Scrips/Inventory_Class.gd" id="1_f7hme"]
+[ext_resource type="Script" uid="uid://dwkp8ivy2avv4" path="res://Invetory/Scrips/Inventory_Slot_Class.gd" id="2_ofqp5"]
+[ext_resource type="Resource" uid="uid://b4gft730vvg6l" path="res://Invetory/Items/Item-EisenErz.tres" id="3_oohky"]
+
+[sub_resource type="Resource" id="Resource_ik4xm"]
+script = ExtResource("2_ofqp5")
+item = ExtResource("3_oohky")
+amount = 20
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[sub_resource type="Resource" id="Resource_76u2f"]
+script = ExtResource("2_ofqp5")
+item = ExtResource("3_oohky")
+amount = 133
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[sub_resource type="Resource" id="Resource_f5m4m"]
+script = ExtResource("2_ofqp5")
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[sub_resource type="Resource" id="Resource_i7h64"]
+script = ExtResource("2_ofqp5")
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[sub_resource type="Resource" id="Resource_r3alb"]
+script = ExtResource("2_ofqp5")
+item = ExtResource("3_oohky")
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[sub_resource type="Resource" id="Resource_xosxe"]
+script = ExtResource("2_ofqp5")
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[sub_resource type="Resource" id="Resource_jtqvf"]
+script = ExtResource("2_ofqp5")
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[sub_resource type="Resource" id="Resource_4bsod"]
+script = ExtResource("2_ofqp5")
+metadata/_custom_type_script = "uid://dwkp8ivy2avv4"
+
+[resource]
+script = ExtResource("1_f7hme")
+slots = Array[ExtResource("2_ofqp5")]([SubResource("Resource_ik4xm"), SubResource("Resource_76u2f"), SubResource("Resource_f5m4m"), SubResource("Resource_i7h64"), SubResource("Resource_r3alb"), SubResource("Resource_xosxe"), SubResource("Resource_jtqvf"), SubResource("Resource_4bsod")])
+metadata/_custom_type_script = "uid://bopx1tbhgcptj"

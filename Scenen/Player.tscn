@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://swa0d8bylfix"]
 
 [ext_resource type="Script" uid="uid://dad3px0e4yi23" path="res://Scrips/Player.gd" id="1_ebk4q"]
-[ext_resource type="Resource" uid="uid://c0yys4amb3b5o" path="res://Invetory/Player_Inventory.tres" id="2_4v4r6"]
+[ext_resource type="Resource" uid="uid://c0yys4amb3b5o" path="res://Invetory/Instances/Player_Inventory.tres" id="2_4v4r6"]
 [ext_resource type="Texture2D" uid="uid://djdrgu66fe3to" path="res://Assets/Player/Player_Tomato.png" id="2_bxejw"]
-[ext_resource type="PackedScene" uid="uid://bfreobmd44i1r" path="res://Invetory/inventory_player.tscn" id="4_4v4r6"]
+[ext_resource type="PackedScene" uid="uid://bfreobmd44i1r" path="res://Invetory/Scenes/Player_Inventory.tscn" id="4_4v4r6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4v4r6"]
 radius = 35.0
@@ -16,6 +16,7 @@ script = ExtResource("1_ebk4q")
 Inventory = ExtResource("2_4v4r6")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=344617259]
+zoom = Vector2(2, 2)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=342519151]
 shape = SubResource("CapsuleShape2D_4v4r6")
@@ -24,7 +25,7 @@ shape = SubResource("CapsuleShape2D_4v4r6")
 texture = ExtResource("2_bxejw")
 
 [node name="Inventory_player" parent="CharacterBody2D" unique_id=1090846618 instance=ExtResource("4_4v4r6")]
-offset_left = -37.0
-offset_top = -103.0
-offset_right = 49.0
-offset_bottom = -56.0
+offset_left = -70.0
+offset_top = -108.0
+offset_right = 16.0
+offset_bottom = -61.0

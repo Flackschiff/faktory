@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InvItem" format=3 uid="uid://b4gft730vvg6l"]
 
-[ext_resource type="Script" uid="uid://tj6wl00kjlc3" path="res://Invetory/Invetory_Item.gd" id="1_6lq68"]
+[ext_resource type="Script" uid="uid://tj6wl00kjlc3" path="res://Invetory/Scrips/Inventory_Item_Class.gd" id="1_6lq68"]
 [ext_resource type="Texture2D" uid="uid://bvak6s46hjpkv" path="res://Invetory/Assets/Eisen Erz.png" id="2_rxxm3"]
 
 [resource]

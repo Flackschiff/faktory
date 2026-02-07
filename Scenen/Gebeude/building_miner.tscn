@@ -1,11 +1,34 @@
 [gd_scene format=3 uid="uid://bgnupar3ptspv"]
 
 [ext_resource type="PackedScene" uid="uid://cmw72u6n6h1ve" path="res://Scenen/Gebeude/building_base.tscn" id="1_d536c"]
-[ext_resource type="Script" uid="uid://bw3abwjcfyt54" path="res://Scrips/Gebeude Scrips/building_miner.gd" id="2_xmc85"]
+[ext_resource type="Script" uid="uid://bw3abwjcfyt54" path="res://Builder UI/building_miner.gd" id="2_xmc85"]
+[ext_resource type="Texture2D" uid="uid://bvak6s46hjpkv" path="res://Invetory/Assets/Eisen Erz.png" id="3_x7o8e"]
 [ext_resource type="Texture2D" uid="uid://djym4cfh5cl8u" path="res://Assets/gebeude/Miner.png" id="3_xmc85"]
+[ext_resource type="Texture2D" uid="uid://bnvayuq724xon" path="res://Invetory/Assets/Kupfer Erz.png" id="4_xj0uu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xmc85"]
+font_color = Color(1, 0, 0, 1)
 
 [node name="Building_Miner" unique_id=2063750384 instance=ExtResource("1_d536c")]
 script = ExtResource("2_xmc85")
+eisen_Erz_Icon = ExtResource("3_x7o8e")
+kupfer_Erz_Icon = ExtResource("4_xj0uu")
+building_type = "Miner"
+building_materials = Dictionary[String, int]({
+"Eisenplatten": 10
+})
+placeble = Array[String](["Kupfer", "Eisen"])
 
-[node name="Sprite2D" parent="." index="0" unique_id=544330774]
+[node name="Sprite2D" parent="." index="1" unique_id=544330774]
 texture = ExtResource("3_xmc85")
+
+[node name="Label" type="Label" parent="." index="2" unique_id=227130599]
+offset_left = -26.0
+offset_top = -43.0
+offset_right = 29.0
+offset_bottom = -9.0
+label_settings = SubResource("LabelSettings_xmc85")
+horizontal_alignment = 1
+
+[node name="temp Erz zeichen" type="Sprite2D" parent="." index="3" unique_id=1127222043]
+position = Vector2(12, -12)
