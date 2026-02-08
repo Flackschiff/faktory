@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://deifcljphi8p4"]
+
+[ext_resource type="Script" uid="uid://cbk8tp1l0fe0f" path="res://Scenen/Gebeude/test_gebaude.gd" id="1_4t475"]
+[ext_resource type="Texture2D" uid="uid://bikspiq62vwus" path="res://Assets/gebeude/Test.png" id="1_y10ot"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4t475"]
+size = Vector2(32, 31)
+
+[node name="Körper" type="StaticBody2D" unique_id=783734856]
+script = ExtResource("1_4t475")
+inv_size = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1216499068]
+shape = SubResource("RectangleShape2D_4t475")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=2129328206]
+texture = ExtResource("1_y10ot")

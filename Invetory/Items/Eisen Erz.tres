@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dkksvs8ak1gln"]
+
+[ext_resource type="Texture2D" uid="uid://crs6r6cbfuyok" path="res://Invetory/Assets/Item Icons/Eisen Erz.png" id="1_opvhv"]
+[ext_resource type="Script" uid="uid://cgbje4cefov1s" path="res://Invetory/Scrips/Items/Item_Klass.gd" id="2_opvhv"]
+
+[resource]
+script = ExtResource("2_opvhv")
+item_Name = "Eisen Erz"
+item_Sprite = ExtResource("1_opvhv")
+beschreibung = "Eisen wir aus Eisen Quellen gewonnen "
+metadata/_custom_type_script = "uid://cgbje4cefov1s"

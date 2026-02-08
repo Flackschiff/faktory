@@ -1,4 +1,4 @@
-extends "res://Builder UI/building_base.gd"
+extends "res://Building maneger/building_base.gd"
 
 
 @onready var label :Label = $Label
@@ -13,13 +13,12 @@ var reProSek: int = 60/1
 var counter: int = 0
 # countet jeden Frame
 var tick: int
-#
+# die Art von block auf dem der Miner steht
 var source_block : String
 
 
 func _physics_process(delta: float):
 	produce_resurces()
-	print(source_block)
 	
 func _ready() -> void:
 	source_block = placing_Check()
@@ -27,9 +26,7 @@ func _ready() -> void:
 		temp_erzzeichen.texture = eisen_Erz_Icon
 	elif source_block == "Kupfer":
 		temp_erzzeichen.texture = kupfer_Erz_Icon
-	
-	
-	
+
 func produce_resurces():
 	if tick % reProSek == 0:
 		label.text = str(counter)

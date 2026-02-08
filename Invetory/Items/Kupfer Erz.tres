@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bepe4h5f1gtjv"]
+
+[ext_resource type="Texture2D" uid="uid://bcl3wlkh4ih36" path="res://Invetory/Assets/Item Icons/Kupfer Erz.png" id="1_1d6fv"]
+[ext_resource type="Script" uid="uid://cgbje4cefov1s" path="res://Invetory/Scrips/Items/Item_Klass.gd" id="2_1d6fv"]
+
+[resource]
+script = ExtResource("2_1d6fv")
+item_Name = "Kupfer Erz"
+item_Sprite = ExtResource("1_1d6fv")
+beschreibung = "Kupfer Erz wir aus Kupferquellen gewonnen"
+metadata/_custom_type_script = "uid://cgbje4cefov1s"

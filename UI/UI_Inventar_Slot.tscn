@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://croiup5k3h1ig"]
+
+[ext_resource type="Texture2D" uid="uid://yj3ylb6e7r4t" path="res://UI/Assets/UI_Window Rahmen.png" id="1_xtdjw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3cfrw"]
+font_size = 5
+font_color = Color(0, 0, 0, 1)
+
+[node name="Inventar_slot" type="NinePatchRect" unique_id=1180301135]
+offset_right = 27.0
+offset_bottom = 27.0
+texture = ExtResource("1_xtdjw")
+
+[node name="Item_Icon" type="Sprite2D" parent="." unique_id=1933640823]
+position = Vector2(13, 13)
+
+[node name="Label" type="Label" parent="." unique_id=403676467]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 18.0
+offset_right = 26.0
+offset_bottom = 26.0
+text = "err"
+label_settings = SubResource("LabelSettings_3cfrw")
+horizontal_alignment = 2

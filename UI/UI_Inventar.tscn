@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dwtq8q7lr4s86"]
+
+[ext_resource type="Texture2D" uid="uid://yj3ylb6e7r4t" path="res://UI/Assets/UI_Window Rahmen.png" id="1_s6l4q"]
+
+[node name="Inventar_UI" type="NinePatchRect" unique_id=1231350567]
+offset_right = 100.0
+offset_bottom = 100.0
+texture = ExtResource("1_s6l4q")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=833559041]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="Inventar_Slots_UI" type="GridContainer" parent="CenterContainer" unique_id=735459494]
+layout_mode = 2

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b1v5by0e7ssq5"]
+
+[ext_resource type="Texture2D" uid="uid://yj3ylb6e7r4t" path="res://UI/Assets/UI_Window Rahmen.png" id="1_k3e7x"]
+
+[node name="UI_Window" type="PanelContainer" unique_id=1715304032]
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="Hintergrund" type="Sprite2D" parent="." unique_id=45873295]
+position = Vector2(50, 49)
+texture = ExtResource("1_k3e7x")

@@ -1,18 +1,22 @@
 [gd_scene format=3 uid="uid://bgnupar3ptspv"]
 
 [ext_resource type="PackedScene" uid="uid://cmw72u6n6h1ve" path="res://Scenen/Gebeude/building_base.tscn" id="1_d536c"]
-[ext_resource type="Script" uid="uid://bw3abwjcfyt54" path="res://Builder UI/building_miner.gd" id="2_xmc85"]
-[ext_resource type="Texture2D" uid="uid://bvak6s46hjpkv" path="res://Invetory/Assets/Eisen Erz.png" id="3_x7o8e"]
+[ext_resource type="Script" uid="uid://bw3abwjcfyt54" path="res://Building maneger/building_miner.gd" id="2_xmc85"]
 [ext_resource type="Texture2D" uid="uid://djym4cfh5cl8u" path="res://Assets/gebeude/Miner.png" id="3_xmc85"]
-[ext_resource type="Texture2D" uid="uid://bnvayuq724xon" path="res://Invetory/Assets/Kupfer Erz.png" id="4_xj0uu"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xmc85"]
+load_path = "res://.godot/imported/Eisen Erz.png-1a23cbc3ffb66c0b8f2414d19ca66dc1.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x7o8e"]
+load_path = "res://.godot/imported/Kupfer Erz.png-1b01fee39df81dd67c8e22c063b779c4.ctex"
 
 [sub_resource type="LabelSettings" id="LabelSettings_xmc85"]
 font_color = Color(1, 0, 0, 1)
 
 [node name="Building_Miner" unique_id=2063750384 instance=ExtResource("1_d536c")]
 script = ExtResource("2_xmc85")
-eisen_Erz_Icon = ExtResource("3_x7o8e")
-kupfer_Erz_Icon = ExtResource("4_xj0uu")
+eisen_Erz_Icon = SubResource("CompressedTexture2D_xmc85")
+kupfer_Erz_Icon = SubResource("CompressedTexture2D_x7o8e")
 building_type = "Miner"
 building_materials = Dictionary[String, int]({
 "Eisenplatten": 10

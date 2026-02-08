@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnvayuq724xon"
-path="res://.godot/imported/Kupfer Erz.png-d87fa9d060281739e642b3b13213c18a.ctex"
+uid="uid://bcl3wlkh4ih36"
+path="res://.godot/imported/Kupfer Erz.png-1b01fee39df81dd67c8e22c063b779c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Invetory/Assets/Kupfer Erz.png"
-dest_files=["res://.godot/imported/Kupfer Erz.png-d87fa9d060281739e642b3b13213c18a.ctex"]
+source_file="res://Invetory/Assets/Item Icons/Kupfer Erz.png"
+dest_files=["res://.godot/imported/Kupfer Erz.png-1b01fee39df81dd67c8e22c063b779c4.ctex"]
 
 [params]
 

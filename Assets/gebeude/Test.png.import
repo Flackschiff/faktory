@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvak6s46hjpkv"
-path="res://.godot/imported/Eisen Erz.png-7921937eb565e98bffdbc85c0450fafa.ctex"
+uid="uid://bikspiq62vwus"
+path="res://.godot/imported/Test.png-9a19fe9c6d3170dd65714d25dd220f51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Invetory/Assets/Eisen Erz.png"
-dest_files=["res://.godot/imported/Eisen Erz.png-7921937eb565e98bffdbc85c0450fafa.ctex"]
+source_file="res://Assets/gebeude/Test.png"
+dest_files=["res://.godot/imported/Test.png-9a19fe9c6d3170dd65714d25dd220f51.ctex"]
 
 [params]
 

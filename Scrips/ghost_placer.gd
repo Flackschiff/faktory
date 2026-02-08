@@ -3,11 +3,18 @@ extends Node2D
 var building_scene := load("res://Scenen/Gebeude/building_miner.tscn")
 @onready var rect: ColorRect = $ColorRect
 
-func _process(_delta):
+func _physics_process(delta: float) -> void:
 	var mouse_pos = get_global_mouse_position()
 	global_position = get_parent().snap_to_grid(mouse_pos,32)
 
-	place_bilding(building_scene)
+	if builder_aktive():
+		place_bilding(building_scene)
+	
+	if Input.is_action_just_pressed("Close_GhostBuilder"):
+		deactivate_builder()
+	
+	
+	#warscheinlich nicht permanent einfach zu schauen wo man was plazieren kann
 	if !valid_place_Check(building_scene):
 		rect.color = Color(0.847, 0.0, 0.0, 1.0)
 	else:
@@ -15,9 +22,15 @@ func _process(_delta):
 	
 
 func place_bilding(building: Resource):
-	if Input.is_action_just_pressed("LinkeMaustaste"):
+	if Input.is_action_just_pressed("LinkeMaustaste") && valid_place_Check(building):
 		get_parent().place_object(building, global_position)
 
+func deactivate_builder():
+	#das gibt die Root node an und mach sie nicht visible
+	$".".visible = false
+	
+func builder_aktive() -> bool:
+	return $".".visible
 
 func valid_place_Check(building: Resource) -> bool:
 	var tile_map = get_parent().resource_map
