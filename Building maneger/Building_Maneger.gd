@@ -21,7 +21,7 @@ func place_building(building_position: Vector2, building_scene: PackedScene):
 	get_tree().current_scene.add_child(building)
 	
 func register_buildin(sender: Object):
-	sender.open_inventory.connect(_on_open_inventory(sender))
+  	sender.open_inventory.connect(_on_open_inventory(sender))
 	
 func _on_open_inventory(inventar: Inventory):
 	InventoryManeger.display_inventory(inventar)
