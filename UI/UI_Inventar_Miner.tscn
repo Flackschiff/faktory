@@ -1,5 +1,21 @@
 [gd_scene format=3 uid="uid://nfok3mdfn7s4"]
 
 [ext_resource type="PackedScene" uid="uid://dwtq8q7lr4s86" path="res://UI/UI_Inventar.tscn" id="1_vna21"]
+[ext_resource type="PackedScene" uid="uid://croiup5k3h1ig" path="res://UI/UI_Inventar_Slot.tscn" id="2_ukbpj"]
 
 [node name="Inventar_UI" unique_id=295795105 instance=ExtResource("1_vna21")]
+offset_right = 299.0
+offset_bottom = 168.0
+
+[node name="CenterContainer" parent="." index="0" unique_id=833559041]
+offset_right = 269.0
+offset_bottom = 161.0
+
+[node name="Inventar_Slots_UI" parent="CenterContainer" index="0" unique_id=735459494]
+columns = 2
+
+[node name="Inventar_slot" parent="CenterContainer/Inventar_Slots_UI" index="0" unique_id=1180301135 instance=ExtResource("2_ukbpj")]
+layout_mode = 2
+
+[node name="Inventar_slot2" parent="CenterContainer/Inventar_Slots_UI" index="1" unique_id=1863533563 instance=ExtResource("2_ukbpj")]
+layout_mode = 2

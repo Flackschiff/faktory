@@ -16,7 +16,10 @@ func transfer_items(from_inventory: Inventory, to_inventory: Inventory, from_ind
 	var stack_transit: Item_Stack = from_inventory.slots[from_index]
 	
 func display_inventory(inventar: Inventory):
-	pass
+	ui_root.add_child(ui_miner)
+	ui_miner.update_inventory(inventar)
+	ui_miner.position = Vector2(40,119)
+	print("display Inventory wurde ausgeführt")
 	
 func build_inventory_ui():
 	pass

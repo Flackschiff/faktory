@@ -8,3 +8,7 @@ var inventory: Inventory = Inventory.new(3)
 @export var building_size: Vector2i
 
 signal open_inventory(inventory: Inventory)
+
+func on_right_click():
+	print("signal Open Inventory wurde aus test gebaude gesendet")
+	emit_signal("open_inventory", inventory)

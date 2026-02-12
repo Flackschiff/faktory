@@ -1,11 +1,22 @@
 extends StaticBody2D
 
 @export var inv_size: int
-var inventar: Inventory = Inventory.new(inv_size)
+var inventar: Inventory
+var tempItem = preload("res://Invetory/Items/Eisen Erz.tres")
+
+var tempstack : Item_Stack = Item_Stack.new()
 
 signal open_inventory(inventar :Inventory)
 
-#checkt ob auf das gebaude gedrückt wurde
-func _input_event(viewport: Viewport, event: InputEvent, shape_idx: int) -> void:
-		if event is InputEventMouseButton and event.pressed:
-			emit_signal("open_inventory", inventar) #schickt das signal mit Referrenz von Inventar
+func _ready() -> void:
+	inventar = Inventory.new(inv_size)  # <-- Jetzt korrekt!
+	
+	tempstack.item = tempItem
+	tempstack.amount = 20
+	
+	inventar.slots[1] = tempstack
+
+func on_right_click():
+	print("signal Open Inventory wurde aus test gebaude gesendet")
+	emit_signal("open_inventory", inventar)
+	

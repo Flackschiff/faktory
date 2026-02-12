@@ -2,10 +2,11 @@ extends Object
 
 class_name Inventory
 var inventory_size: int
-var slots: Array[Item_Stack] #maby =[]
+var slots: Array[Item_Stack] # Maby = []
 
 func _init(size: int) -> void:
 	inventory_size = size
+	slots = []
 	slots.resize(size)
 
 func add_item_index(index_to: int, stack: Item_Stack) -> bool:

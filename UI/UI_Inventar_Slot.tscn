@@ -1,25 +1,27 @@
 [gd_scene format=3 uid="uid://croiup5k3h1ig"]
 
 [ext_resource type="Texture2D" uid="uid://yj3ylb6e7r4t" path="res://UI/Assets/UI_Window Rahmen.png" id="1_xtdjw"]
+[ext_resource type="Script" uid="uid://cub6gun2r3lea" path="res://UI/ui_inventar_slot.gd" id="2_3cfrw"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3cfrw"]
-font_size = 5
 font_color = Color(0, 0, 0, 1)
 
 [node name="Inventar_slot" type="NinePatchRect" unique_id=1180301135]
-offset_right = 27.0
-offset_bottom = 27.0
+custom_minimum_size = Vector2(50, 50)
+offset_right = 50.0
+offset_bottom = 50.0
 texture = ExtResource("1_xtdjw")
+script = ExtResource("2_3cfrw")
 
 [node name="Item_Icon" type="Sprite2D" parent="." unique_id=1933640823]
-position = Vector2(13, 13)
+position = Vector2(25, 24)
+scale = Vector2(3, 3)
 
 [node name="Label" type="Label" parent="." unique_id=403676467]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 18.0
-offset_right = 26.0
-offset_bottom = 26.0
-text = "err"
+offset_left = 17.0
+offset_top = 27.0
+offset_right = 47.0
+offset_bottom = 50.0
 label_settings = SubResource("LabelSettings_3cfrw")
 horizontal_alignment = 2

@@ -22,6 +22,12 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 
 InventoryManeger="*uid://bfihbkvxsjt3o"
 BuildingManeger="*uid://6bp3yokrtwp5"
+UiManeger="*uid://dy3pwqomg6wny"
+WorldInteractionManager="*uid://b2kxs82a2odvd"
+
+[global_group]
+
+building="In diese Gruppe fallen alle gebaude mit den man interagieren kann"
 
 [input]
 
