@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://buy5qjtcbrqie"]
+
+[ext_resource type="PackedScene" uid="uid://dwtq8q7lr4s86" path="res://UI/Szenen/UI_Inventar.tscn" id="1_qg044"]
+[ext_resource type="PackedScene" uid="uid://croiup5k3h1ig" path="res://UI/Szenen/UI_Inventar_Slot.tscn" id="2_8sn3o"]
+
+[node name="Inventar_UI" unique_id=1231350567 instance=ExtResource("1_qg044")]
+custom_minimum_size = Vector2(290, 294)
+offset_right = 290.0
+offset_bottom = 294.0
+
+[node name="CenterContainer" parent="." index="0" unique_id=833559041]
+offset_right = 289.0
+offset_bottom = 294.0
+
+[node name="Inventar_Slots_UI" parent="CenterContainer" index="0" unique_id=735459494]
+columns = 4
+
+[node name="Inventar_slot" parent="CenterContainer/Inventar_Slots_UI" index="0" unique_id=1180301135 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot2" parent="CenterContainer/Inventar_Slots_UI" index="1" unique_id=495739638 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot3" parent="CenterContainer/Inventar_Slots_UI" index="2" unique_id=1276915651 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot4" parent="CenterContainer/Inventar_Slots_UI" index="3" unique_id=429565009 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot5" parent="CenterContainer/Inventar_Slots_UI" index="4" unique_id=1987097100 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot6" parent="CenterContainer/Inventar_Slots_UI" index="5" unique_id=214241855 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot7" parent="CenterContainer/Inventar_Slots_UI" index="6" unique_id=642507532 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot8" parent="CenterContainer/Inventar_Slots_UI" index="7" unique_id=474721944 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot9" parent="CenterContainer/Inventar_Slots_UI" index="8" unique_id=492573814 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot10" parent="CenterContainer/Inventar_Slots_UI" index="9" unique_id=1066171471 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot11" parent="CenterContainer/Inventar_Slots_UI" index="10" unique_id=1204413877 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot12" parent="CenterContainer/Inventar_Slots_UI" index="11" unique_id=705533249 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot13" parent="CenterContainer/Inventar_Slots_UI" index="12" unique_id=934902256 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot14" parent="CenterContainer/Inventar_Slots_UI" index="13" unique_id=1864739607 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot15" parent="CenterContainer/Inventar_Slots_UI" index="14" unique_id=1026896383 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2
+
+[node name="Inventar_slot16" parent="CenterContainer/Inventar_Slots_UI" index="15" unique_id=1354881461 groups=["Player_inv_slot"] instance=ExtResource("2_8sn3o")]
+layout_mode = 2

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://swa0d8bylfix"]
+
+[ext_resource type="Script" uid="uid://dad3px0e4yi23" path="res://Player/Scrips/Player.gd" id="1_ebk4q"]
+[ext_resource type="Texture2D" uid="uid://djdrgu66fe3to" path="res://Player/Assets/Player_Tomato.png" id="2_bxejw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4v4r6"]
+radius = 35.0
+height = 70.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1757822902 groups=["player"]]
+script = ExtResource("1_ebk4q")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=344617259]
+zoom = Vector2(2, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=342519151]
+shape = SubResource("CapsuleShape2D_4v4r6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1986602980]
+texture = ExtResource("2_bxejw")
